@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 searchlist = [0,1,2,3,4,5,6,7,8,9]
-value = 4
+value  = int(input("Please enter number you want to search: \n"))
 number = -1
 
 left = 0
@@ -19,4 +19,7 @@ while left <= right:
     else:
         right = center - 1
 
-print(" {} は {} 番目に見つかりました。".format(value, number))
+if number == -1:
+    print("{} は見つかりませんでした。".format(value))
+else:
+    print(" {} は {} 番目に見つかりました。".format(value, number))
